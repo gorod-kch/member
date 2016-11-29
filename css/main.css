@@ -1,0 +1,163 @@
+/* font-family: "BenderRegular"; */
+@font-face {
+    font-family: "BenderRegular";
+    src: url("../fonts/Bender/BenderRegular/BenderRegular.eot");
+    src: url("../fonts/Bender/BenderRegular/BenderRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderRegular/BenderRegular.woff") format("woff"),
+    url("../fonts/Bender/BenderRegular/BenderRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderBold"; */
+@font-face {
+    font-family: "BenderBold";
+    src: url("../fonts/Bender/BenderBold/BenderBold.eot");
+    src: url("../fonts/Bender/BenderBold/BenderBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderBold/BenderBold.woff") format("woff"),
+    url("../fonts/Bender/BenderBold/BenderBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderItalic"; */
+@font-face {
+    font-family: "BenderItalic";
+    src: url("../fonts/Bender/BenderItalic/BenderItalic.eot");
+    src: url("../fonts/Bender/BenderItalic/BenderItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderItalic/BenderItalic.woff") format("woff"),
+    url("../fonts/Bender/BenderItalic/BenderItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderBoldItalic"; */
+@font-face {
+    font-family: "BenderBoldItalic";
+    src: url("../fonts/Bender/BenderBoldItalic/BenderBoldItalic.eot");
+    src: url("../fonts/Bender/BenderBoldItalic/BenderBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderBoldItalic/BenderBoldItalic.woff") format("woff"),
+    url("../fonts/Bender/BenderBoldItalic/BenderBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderBlack"; */
+@font-face {
+    font-family: "BenderBlack";
+    src: url("../fonts/Bender/BenderBlack/BenderBlack.eot");
+    src: url("../fonts/Bender/BenderBlack/BenderBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderBlack/BenderBlack.woff") format("woff"),
+    url("../fonts/Bender/BenderBlack/BenderBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderBlackItalic"; */
+@font-face {
+    font-family: "BenderBlackItalic";
+    src: url("../fonts/Bender/BenderBlackItalic/BenderBlackItalic.eot");
+    src: url("../fonts/Bender/BenderBlackItalic/BenderBlackItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderBlackItalic/BenderBlackItalic.woff") format("woff"),
+    url("../fonts/Bender/BenderBlackItalic/BenderBlackItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderLight"; */
+@font-face {
+    font-family: "BenderLight";
+    src: url("../fonts/Bender/BenderLight/BenderLight.eot");
+    src: url("../fonts/Bender/BenderLight/BenderLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderLight/BenderLight.woff") format("woff"),
+    url("../fonts/Bender/BenderLight/BenderLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BenderLightItalic"; */
+@font-face {
+    font-family: "BenderLightItalic";
+    src: url("../fonts/Bender/BenderLightItalic/BenderLightItalic.eot");
+    src: url("../fonts/Bender/BenderLightItalic/BenderLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Bender/BenderLightItalic/BenderLightItalic.woff") format("woff"),
+    url("../fonts/Bender/BenderLightItalic/BenderLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+  background: #fff;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+    margin:0 auto;
+    height: 700px;
+    width:1000px;
+}
+
+
+body {
+    font-family: "BenderBlack";
+    background-color: #fff;
+    background-image: url('../images/background.png');
+    background-size: 100%;
+    font-size: 20px;
+    position: relative;
+    text-transform: uppercase;
+    color: #404040;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:10px;
+    left:500px;
+}
+.nav__item {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav__item_active, .nav__item:hover {
+    color: #00cbcc;
+}
+
+.question {
+    font-size: 40px;
+    position: absolute;
+    right: 90px;
+    top:50px;
+    text-align: center;
+}
+
+.answers {
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 340px;
+    left: 670px;
+    font-size: 35px;
+    list-style-type: none;
+}
+.answers li {
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.answers li:hover {
+    color: #00cbcc;
+}
+
+.link {
+    text-decoration: none;
+    position: absolute;
+    bottom:0;
+    right:100px;
+    color: #00cbcc;
+}
