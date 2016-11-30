@@ -79,6 +79,15 @@
     font-weight: normal;
 }
 
+@keyframes animatedBackground {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 0 0; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
 html {
   box-sizing: border-box;
   background: #fff;
@@ -102,13 +111,27 @@ html, body {
 
 body {
     font-family: "BenderBlack";
-    background-color: #fff;
-    background-image: url('../images/background.png');
-    background-size: 100%;
+    background-image: url('../images/background-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     font-size: 20px;
     position: relative;
     text-transform: uppercase;
     color: #404040;
+    animation: animatedBackground 0.5s ease;
+}
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 700px;
+    background-image: url(../images/background-right-corners.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    z-index: -1;
 }
 
 .nav {
@@ -126,6 +149,14 @@ body {
 }
 .nav__item_active, .nav__item:hover {
     color: #00cbcc;
+}
+
+.picture {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .question {
