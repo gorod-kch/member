@@ -205,6 +205,18 @@ function showResult(){
     $('main').hide();
     $('.results').show();
     $('.results__number').text(result);
+
+    if(typeof VK !== 'undefined') {
+        VK.api('wall.post', {
+            message: 'Я на 00 Качканарец. А ты?\n\nУзнай в приложении',
+            attachments: 'https://vk.com/app5753070_-46359936',
+            v:'5.45'
+        },function(data) {
+            if (data.response) {
+            // data.response is object
+            }
+        });
+    }
 }
 
 
