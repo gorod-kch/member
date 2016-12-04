@@ -190,12 +190,19 @@ body {
 
 .results {
     display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
     height: 100%;
     background:  #fff;
     text-align: center;
 }
 
+.results__description {
+    width: 700px;
+    margin: 0 auto;
+}
 .question {
     font-size: 35px;
     position: absolute;
