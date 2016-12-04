@@ -139,8 +139,9 @@ body:after {
     margin: 0;
     padding: 0;
     position: absolute;
-    top:10px;
-    left:500px;
+    font-size: 24px;
+    top:20px;
+    left:490px;
 }
 .nav__item {
     display: inline-block;
@@ -160,24 +161,24 @@ body:after {
 }
 
 .question {
-    font-size: 40px;
+    font-size: 41px;
     position: absolute;
-    right: 90px;
-    top:50px;
+    right: 62px;
+    top: 95px;
     text-align: center;
 }
 
 .answers {
-    margin:0;
+    margin: 0;
     padding: 0;
     position: absolute;
-    top: 340px;
-    left: 670px;
-    font-size: 35px;
+    top: 336px;
+    left: 630px;
+    font-size: 41px;
     list-style-type: none;
 }
 .answers li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
     text-align: center;
 }
@@ -185,10 +186,16 @@ body:after {
     color: #00cbcc;
 }
 
+.answers li small {
+    font-size: 22px;
+}
+
 .link {
     text-decoration: none;
     position: absolute;
-    bottom:0;
-    right:100px;
+    bottom: 7px;
+    right: 130px;
     color: #00cbcc;
+    text-transform: none;
+    font-size: 23px;
 }
