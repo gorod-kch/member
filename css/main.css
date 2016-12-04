@@ -171,9 +171,10 @@ body {
     bottom: 50px;
     cursor: pointer;
     outline: none;
+    margin-top: 55px
 }
 .splashscreen__close:active {
-    margin-top:5px;
+    margin-top:60px;
 }
 .splashscreen__line1 {
     margin-top: 111px;
