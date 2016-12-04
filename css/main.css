@@ -107,6 +107,7 @@ html, body {
 
 body {
     font-family: "BenderBlack";
+    background-image: url('../images/questions/1.png');
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 20px;
@@ -115,7 +116,7 @@ body {
     color: #404040;
 }
 
-.nav {
+.progress {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -124,12 +125,11 @@ body {
     top:20px;
     left:490px;
 }
-.nav__item {
+.progress__item {
     display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
+    margin-right: 17px;
 }
-.nav__item_active, .nav__item:hover {
+.progress__item_active {
     color: #00cbcc;
 }
 
