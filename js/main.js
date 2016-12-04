@@ -108,7 +108,12 @@ $('.splashscreen__close').on('click', function(event) {
     event.preventDefault();
 
     $('.splashscreen').hide();
-    $('.app').show();
+
+    $('.preloader').show();
+    setTimeout(function(){
+        $('.preloader').hide();
+        $('.app').show();
+    }, 2000);
 });
 
 
