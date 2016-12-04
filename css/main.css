@@ -158,6 +158,13 @@ body {
     background: #fff;
     text-align: center;
 }
+.splashscreen__close {
+    background: url('./../images/button.png') #fff;
+    border:0;
+    width: 420px;
+    height: 62px;
+    bottom: 50px;
+}
 
 .results {
     display: none;
