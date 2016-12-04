@@ -72,7 +72,7 @@ var test = [
     },
     {"Как называется паблик с самыми красивыми видами Качканара?":
         {
-            'Моя провинция':1
+            'Моя провинция<br><div id="vk_groups"></div>':1
         }
     }
 ];
@@ -146,7 +146,7 @@ $('.answers').on('click', 'li', function(e) {
     if (isTrue) {
         $(this).addClass('answer_true');
     } else {
-         $(this).addClass('answer_false');
+        $(this).addClass('answer_false');
     }
 
 
@@ -163,6 +163,7 @@ $('.answers').on('click', 'li', function(e) {
     // } else {
     //     isSpecial = false;
     // }
+    //
 
     // Анимация
     $('main').delay(500).fadeOut(function(){
@@ -178,6 +179,11 @@ $('.answers').on('click', 'li', function(e) {
         $.each(test[nextQuestion][ Object.keys(test[nextQuestion]) ], function(index, val) {
             $('.answers').append('<li data-is-true="'+val+'">'+ index +'</li>');
         });
+
+        if(nextQuestion == 9) {
+            VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 62858261);
+            console.log(nextQuestion);
+        }
 
         if(!isSpecial){
             $('body').css('background-image', 'url("./images/questions/'+(nextQuestion+1)+'.png")');
