@@ -161,6 +161,7 @@ body {
     height: 100%;
     background: #fff;
     text-align: center;
+    overflow: hidden;
 }
 .splashscreen__close {
     background: url('./../images/button.png') #fff;
@@ -173,6 +174,18 @@ body {
 }
 .splashscreen__close:active {
     margin-top:5px;
+}
+.splashscreen__line1 {
+    margin-top: 111px;
+    font-size: 43px;
+}
+.splashscreen__line2 {
+    margin-top: 33px;
+    line-height: normal;
+    font-size: 31px;
+}
+.splashscreen__line3 {
+    font-size: 40px;
 }
 
 .results {
