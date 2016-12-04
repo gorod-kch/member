@@ -168,11 +168,12 @@ body {
 }
 
 .question {
-    font-size: 41px;
+    font-size: 35px;
     position: absolute;
     right: 62px;
     top: 95px;
     text-align: center;
+    width: 400px;
 }
 
 .answers {
@@ -180,8 +181,9 @@ body {
     padding: 0;
     position: absolute;
     top: 336px;
-    left: 630px;
-    font-size: 41px;
+    right: 0;
+    width: 350px;
+    font-size: 30px;
     list-style-type: none;
 }
 .answers li {
