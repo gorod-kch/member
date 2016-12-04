@@ -199,12 +199,5 @@ function showResult(){
 
 // Прелоад
 for (var i = 1; i <= test.length; i++) {
-    $("<img />").attr("src", 'img/faces/' + i + '.png');
+    $("<img />").attr("src", 'images/questions/' + i + '.png');
 }
-$("<img />").attr("src", 'img/faces/why-not.png');
-$("<img />").attr("src", 'img/faces/facepalm.png');
-$("<img />").attr("src", 'img/35.png?1');
-$("<img />").attr("src", 'img/70.png?1');
-$("<img />").attr("src", 'img/100.png?1');
-$("<img />").attr("src", 'img/loading.gif');
-$("<img />").attr("src", 'img/bg.png');
