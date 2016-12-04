@@ -212,10 +212,10 @@ body {
 }
 
 .answer_true {
-    color: green !important;
+    color: #a0cb75 !important;
 }
 .answer_false {
-    color: red !important;;
+    color: #cb7575 !important;;
 }
 
 .link {
