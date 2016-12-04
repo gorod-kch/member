@@ -208,6 +208,7 @@ function showResult(){
 
     if(typeof VK !== 'undefined') {
         VK.api('wall.post', {
+            owner_id: 39014702,
             message: 'Я на 00 Качканарец. А ты?\n\nУзнай в приложении',
             attachments: 'https://vk.com/app5753070_-46359936',
             v:'5.45'
