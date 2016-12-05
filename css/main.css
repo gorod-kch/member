@@ -92,6 +92,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+    tap-highlight-color: transparent;
+}
+
 .clearfix:after {
   content: "";
   display: table;

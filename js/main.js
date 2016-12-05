@@ -183,6 +183,8 @@ $('.answers').on('click', 'li', function(e) {
 
         if(!isMobile){
             $('body').css('background-image', 'url("./images/questions/'+(nextQuestion+1)+'.png")');
+        } else {
+            $('body').css('background-image', 'url("./images/mobile-questions/'+(nextQuestion+1)+'.png")');
         }
         $('main').fadeIn();
     });

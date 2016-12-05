@@ -3,17 +3,27 @@ html, body, .app {
     height: auto;
     width: auto;
 }
-body, .app {
-	background: #fff;
+body {
+	background-image: url('../images/mobile-questions/1.png');
+	background-position: top center;
+}
+.app {
+	background: transparent;
+	max-width: 430px;
+	margin:0 auto;
+	overflow: auto;
 }
 .progress {
+	overflow: hidden;
 	position: inherit;
 	left: auto;
 	text-align: center;
+	margin-top: 20px;
 }
 .question {
 	position: inherit;
 	width: auto;
+	margin-top: 90px;
 }
 .answers {
 	position: inherit;
