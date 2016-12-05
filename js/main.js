@@ -221,14 +221,16 @@ function showResult(){
     //     },function(data) {
     //     });
     // }
-
-    VK.init({
-        apiId: 5753070,
-    });
-    VK.Auth.login(function(){
-        VK.api("wall.post", {"message": "Я качканарец на "+result+" из 10.\n\n Оцени свои знания о Качканаре, пройди тест https://vk.com/app5753070_-46359936!", "attachments":"photo39014702_456239116,https://vk.com/app5753070_-46359936"}, function (data) {});
-
-    }, VK.access.FRIENDS);
+    $('.share-wrapper').html(VK.Share.button({
+        url: "https://vk.com/app5753070_-46359936",
+        title: "Я Качканарец на "+result+" из 10.",
+        description: " Оцени свои знания о Качканаре, пройди тест!",
+        image: 'https://pp.vk.me/c636519/v636519702/3a508/ySzBTIe3q2A.jpg',
+        noparse: true
+    },{
+        type: "custom",
+        text: '<div class="share-button">Расскажите друзьям</div>'
+    }));
 }
 
 
@@ -236,3 +238,7 @@ function showResult(){
 for (var i = 1; i <= test.length; i++) {
     $("<img />").attr("src", 'images/questions/' + i + '.png');
 }
+
+
+
+

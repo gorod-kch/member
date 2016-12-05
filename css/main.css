@@ -274,3 +274,12 @@ body {
     margin-left: 30px;
     margin-top: 30px;
 }
+.share-wrapper {
+    text-align: center;
+}
+.share-button {
+    padding: 10px;
+    background: #00cbcc;
+    color:#fff;
+    font-size: 20px;
+}
