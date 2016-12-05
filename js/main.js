@@ -77,21 +77,7 @@ var test = [
     }
 ];
 
-var specials = {
-    // вопрос с нуля — процент
-    "1-3":function(){
-        $('main').hide();
-        $('.special-text').html('ХММ…<br>А ПОЧЕМУ БЫ<br>И НЕТ?..');
-        $('.face').attr('src', 'img/faces/why-not.png');
-        $('.special').show();
-    },
-    "6-0": function(){
-        $('main').hide();
-        $('.face').attr('src', 'img/faces/facepalm.png');
-        $('.special-text').html('БОООЖЕ…<br>КАКИЕ МАСОНЫ?!..');
-        $('.special').show();
-    }
-};
+var specials = {};
 
 var question = 0;
 var result = 0;
@@ -109,11 +95,16 @@ $('.splashscreen__close').on('click', function(event) {
 
     $('.splashscreen').hide();
 
-    $('.preloader').show();
-    setTimeout(function(){
-        $('.preloader').hide();
+    if(isMobile) {
         $('.app').show();
-    }, 2000);
+    } else {
+        $('.preloader').show();
+        setTimeout(function(){
+            $('.preloader').hide();
+            $('.app').show();
+        }, 2000);
+    }
+
 });
 
 
@@ -190,10 +181,10 @@ $('.answers').on('click', 'li', function(e) {
             console.log(nextQuestion);
         }
 
-        if(!isSpecial){
+        if(!isMobile){
             $('body').css('background-image', 'url("./images/questions/'+(nextQuestion+1)+'.png")');
-            $('main').fadeIn();
         }
+        $('main').fadeIn();
     });
 
 
