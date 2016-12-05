@@ -205,10 +205,14 @@ body {
     margin: 0 auto;
 }
 .question {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-size: 35px;
     position: absolute;
     right: 62px;
-    top: 95px;
+    top: 70px;
+    height: 240px;
     text-align: center;
     width: 400px;
 }
