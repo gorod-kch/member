@@ -199,10 +199,21 @@ body {
     background:  #fff;
     text-align: center;
 }
-
+.results__header {
+    font-size: 40px;
+}
+.results__header span {
+    color: #00cbcc;
+    font-size: 60px;
+}
+.results__subheader {
+    color: #00cbcc;
+    font-size: 45px;
+}
 .results__description {
     width: 700px;
     margin: 0 auto;
+    font-size: 30px;
 }
 .question {
     display: flex;
