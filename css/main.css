@@ -236,9 +236,9 @@ body {
     padding: 0;
     position: absolute;
     top: 336px;
-    right: 0;
+    right: 10px;
     width: 350px;
-    font-size: 30px;
+    font-size: 25px;
     list-style-type: none;
 }
 .answers li {
