@@ -102,7 +102,7 @@ $('.splashscreen__close').on('click', function(event) {
         setTimeout(function(){
             $('.preloader').hide();
             $('.app').show();
-        }, 1000);
+        }, 2000);
     }
 
 });
