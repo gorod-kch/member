@@ -213,18 +213,10 @@ function showResult(){
         $('.results__description').html('<p>Блеск! Ты правильно ответил на все вопросы! Далеко не каждый житель города может похвастаться такими знаниями! Обязательно опубликуй результат теста на своей стене - пусть твои друзья знают, насколько ты крут. </p><p style="font-size:25px;">Без всяких шуток, ты по праву заслужил звание «Настоящий Качканарец»!</p>');
     }
 
-    // if(typeof VK !== 'undefined') {
-    //     VK.api('wall.post', {
-    //         message: 'Я на 00 Качканарец. А ты?\n\nУзнай в приложении',
-    //         attachments: 'https://vk.com/app5753070_-46359936',
-    //         v:'5.45'
-    //     },function(data) {
-    //     });
-    // }
     $('.share-wrapper').html(VK.Share.button({
         url: "https://vk.com/app5753070_-46359936",
-        title: "Я Качканарец на "+result+" из 10.",
-        description: " Оцени свои знания о Качканаре, пройди тест!",
+        title: "Я качканарец на "+result+" из 10. Оцени свои знания, пройди тест!",
+        description: "",
         image: 'https://pp.vk.me/c636519/v636519702/3a508/ySzBTIe3q2A.jpg',
         noparse: true
     },{
