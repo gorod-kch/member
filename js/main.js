@@ -229,7 +229,7 @@ function showResult(){
         noparse: true
     },{
         type: "custom",
-        text: '<div class="share-button">Расскажи друзьям</div>'
+        text: '<img src="./images/share.png">'
     }));
 }
 
