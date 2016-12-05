@@ -228,7 +228,7 @@ function showResult(){
     VK.Auth.login(function(){
         VK.api("wall.post", {"message": "Я качканарец на "+result+" из 10.\n\n Оцени свои знания о Качканаре, пройди тест https://vk.com/app5753070_-46359936!", "attachments":"photo39014702_456239116,https://vk.com/app5753070_-46359936"}, function (data) {});
 
-    });
+    }, VK.access.FRIENDS);
 }
 
 
