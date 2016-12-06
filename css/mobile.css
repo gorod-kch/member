@@ -16,6 +16,14 @@ body {
 	margin:0 auto;
 	overflow: auto;
 }
+
+
+.splashscreen__line1 {
+	font-size: 38px;
+}
+.splashscreen__line2 {
+    font-size: 28px;
+}
 .progress {
 	overflow: hidden;
 	position: inherit;
