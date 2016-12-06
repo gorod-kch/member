@@ -208,6 +208,7 @@ body {
 }
 .results__header {
     font-size: 40px;
+    margin-bottom: 0;
 }
 .results__header span {
     color: #00cbcc;
@@ -216,6 +217,7 @@ body {
 .results__subheader {
     color: #00cbcc;
     font-size: 45px;
+    margin-bottom: 0;
 }
 .results__description {
     width: 700px;
@@ -280,6 +282,7 @@ body {
 }
 .share-wrapper {
     text-align: center;
+    margin-top: 20px;
 }
 .share-wrapper img {
     max-width: 100%;
