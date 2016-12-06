@@ -12,7 +12,7 @@ body {
 	background: url('../images/mobile-background.png');
 	background-position: center 28px;
 	background-repeat: no-repeat;
-	max-width: 430px;
+	width: 430px;
 	margin:0 auto;
 	overflow: auto;
 }
@@ -26,7 +26,8 @@ body {
 .question {
 	position: inherit;
 	width: auto;
-	margin-top: 250px;
+	margin-top: 300px;
+	font-size: 30px;
 }
 .answers {
 	position: inherit;
