@@ -32,6 +32,10 @@ body {
 	text-align: center;
 	margin-top: 20px;
 }
+.progress__item {
+    display: inline-block;
+    margin-right: 15px;
+}
 .question {
 	position: inherit;
 	width: auto;
@@ -62,6 +66,4 @@ body {
 	z-index: 100;
 	width: 100%;
 }
-.special__picture {
 
-}
