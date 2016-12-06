@@ -163,7 +163,7 @@ $('.answers').on('click', 'li', function(e) {
     if(question === 7 && $(this).index() == 3){
         isSpecial = true;
         $('.answers, .question').hide();
-        $('.special').html('<img src="images/specials/cat.png" class="special__picture" style="height:280px;right:20px">').show();
+        $('.special').html('<img src="images/specials/cat.png" class="special__picture" style="height:280px;margin-top:80px">').show();
         setTimeout(function(){
             $('.special').hide();
         }, 4000);
