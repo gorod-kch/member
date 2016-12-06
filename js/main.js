@@ -153,7 +153,7 @@ $('.answers').on('click', 'li', function(e) {
 
     if(question === 5 && $(this).eq(2)){
         isSpecial = true;
-        $('.answers').hide();
+        $('.answers, .question').hide();
         $('.special').html('<img src="images/specials/spongebob.png" class="special__picture">').show();
         setTimeout(function(){
             $('.special').hide();
@@ -162,7 +162,7 @@ $('.answers').on('click', 'li', function(e) {
 
     if(question === 0 && $(this).index() !== 3){
         isSpecial = true;
-        $('.answers').hide();
+        $('.answers, .question').hide();
 
         if($(this).index() === 0){
             $('.special').html('<img src="images/specials/turgenev.png" class="special__picture">').show();
@@ -207,7 +207,7 @@ $('.answers').on('click', 'li', function(e) {
         }
 
         $('main').fadeIn();
-        $('.answers').show();
+        $('.answers, .question').show();
     });
 
 

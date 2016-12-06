@@ -163,8 +163,8 @@ body {
 .special {
     display: none;
     position: absolute;
-    top: 270px;
-    right: 10px;
+    top: 170px;
+    right: 0;
     width: 330px;
 }
 .special__picture {
