@@ -6,13 +6,13 @@ html, body, .app {
 body {
 	background-image: url('../images/mobile-questions/1.png');
 	background-position: top center;
-	background-size: 430px;
+	background-size: 100%;
+	max-width: 430px;
 }
 .app {
 	background: url('../images/mobile-background.png');
 	background-position: center 28px;
 	background-repeat: no-repeat;
-	width: 430px;
 	margin:0 auto;
 	overflow: auto;
 }
