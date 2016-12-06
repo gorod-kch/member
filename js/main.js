@@ -160,6 +160,15 @@ $('.answers').on('click', 'li', function(e) {
         }, 4000);
     }
 
+    if(question === 7 && $(this).index() == 3){
+        isSpecial = true;
+        $('.answers, .question').hide();
+        $('.special').html('<img src="images/specials/cat.png" class="special__picture" style="height:280px;right:20px">').show();
+        setTimeout(function(){
+            $('.special').hide();
+        }, 4000);
+    }
+
     if(question === 0 && $(this).index() !== 3){
         isSpecial = true;
         $('.answers, .question').hide();
