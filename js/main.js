@@ -157,7 +157,7 @@ $('.answers').on('click', 'li', function(e) {
         $('.special').html('<img src="images/specials/spongebob.png" class="special__picture">').show();
         setTimeout(function(){
             $('.special').hide();
-        }, 3000);
+        }, 4000);
     }
 
     if(question === 0 && $(this).index() !== 3){
@@ -174,10 +174,10 @@ $('.answers').on('click', 'li', function(e) {
 
         setTimeout(function(){
             $('.special').hide();
-        }, 3000);
+        }, 4000);
     }
 
-    var delay = (isSpecial? 3500: 500);
+    var delay = (isSpecial? 4500: 500);
 
 
     // Анимация
