@@ -166,6 +166,7 @@ body {
     top: 170px;
     right: 0;
     width: 330px;
+    text-align: center;
 }
 .special__picture {
     height: 400px;

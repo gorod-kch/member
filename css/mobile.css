@@ -56,6 +56,12 @@ body {
 }
 
 .special {
-	position: inherit;
-	width: auto;
+	background:#fff;
+	position: absolute;
+	top:0;
+	z-index: 100;
+	width: 100%;
+}
+.special__picture {
+
 }
