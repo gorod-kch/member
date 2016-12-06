@@ -151,7 +151,7 @@ $('.answers').on('click', 'li', function(e) {
 
     console.log(question, $(this).index());
 
-    if(question === 5 && $(this).eq(2)){
+    if(question === 5 && $(this).index() == 2){
         isSpecial = true;
         $('.answers, .question').hide();
         $('.special').html('<img src="images/specials/spongebob.png" class="special__picture">').show();
