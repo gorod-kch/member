@@ -247,7 +247,7 @@ function showResult(){
         url: "https://vk.com/app5753070_-46359936",
         title: "Я качканарец на "+result+" из 10. Оцени свои знания, пройди тест!",
         description: "",
-        image: 'https://pp.vk.me/c638216/v638216702/1746a/eixJPJh433w.jpg',
+        image: 'https://pp.vk.me/c638216/v638216702/174b6/VX6UMZhRZ7w.jpg',
         noparse: true
     },{
         type: "custom",
