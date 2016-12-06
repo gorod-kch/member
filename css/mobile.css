@@ -54,3 +54,8 @@ body {
 	width: auto;
 	padding: 10px;
 }
+
+.special {
+	position: inherit;
+	width: auto;
+}

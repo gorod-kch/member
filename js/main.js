@@ -127,6 +127,7 @@ $.each(test[0][ Object.keys(test[0]) ], function(index, val) {
 // Действие по клику на ответ
 $('.answers').on('click', 'li', function(e) {
     e.preventDefault();
+    isSpecial = false;
 
     var isTrue = parseInt($(this).data('is-true'));
 
@@ -148,21 +149,39 @@ $('.answers').on('click', 'li', function(e) {
 
     var nextQuestion = question+1;
 
-    // if(typeof specials[question + "-" + percent] == "function"){
-    //     isSpecial = true;
-    //     specials[question + "-" + percent]();
-    //     setTimeout(function(){
-    //         $('.special').hide();
-    //         $('main').show();
-    //             $('.face').attr('src', 'img/faces/' + (question+1) + '.png');
-    //     },3000);
-    // } else {
-    //     isSpecial = false;
-    // }
-    //
+    console.log(question, $(this).index());
+
+    if(question === 5 && $(this).eq(2)){
+        isSpecial = true;
+        $('.answers').hide();
+        $('.special').html('<img src="images/specials/spongebob.png" class="special__picture">').show();
+        setTimeout(function(){
+            $('.special').hide();
+        }, 3000);
+    }
+
+    if(question === 0 && $(this).index() !== 3){
+        isSpecial = true;
+        $('.answers').hide();
+
+        if($(this).index() === 0){
+            $('.special').html('<img src="images/specials/turgenev.png" class="special__picture">').show();
+        } else if($(this).index() === 1){
+            $('.special').html('<img src="images/specials/chehov.png" class="special__picture">').show();
+        } else if($(this).index() === 2){
+            $('.special').html('<img src="images/specials/mayakovsky.png" class="special__picture">').show();
+        }
+
+        setTimeout(function(){
+            $('.special').hide();
+        }, 3000);
+    }
+
+    var delay = (isSpecial? 3500: 500);
+
 
     // Анимация
-    $('main').delay(500).fadeOut(function(){
+    $('main').delay(delay).fadeOut(function(){
         $('.progress__item').removeClass('progress__item_active');
         //$('.progress li').eq(question).addClass('archive');
 
@@ -186,7 +205,9 @@ $('.answers').on('click', 'li', function(e) {
         } else {
             $('body').css('background-image', 'url("./images/mobile-questions/'+(nextQuestion+1)+'.png")');
         }
+
         $('main').fadeIn();
+        $('.answers').show();
     });
 
 
